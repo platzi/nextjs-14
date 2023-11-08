@@ -1,0 +1,24 @@
+.Description
+  display: grid
+  grid-template-columns: 1fr 1fr
+  column-gap: 2.25rem
+  max-width: 1000px
+  margin: 6rem auto
+  padding: 2rem 2.5rem
+  border-radius: 1.375rem
+  & > img
+    object-fit: cover
+    border-radius: 1rem
+    box-shadow: 0 0 4rem rgba(255, 255, 255, 0.2)
+    width: 500px
+    height: 300px
+  &__text
+    & > h2
+      font-size: 2rem
+      font-weight: 600
+      color: $color-secondary
+      margin: 0
+    & > p
+      font-size: 1.5rem
+      line-height: 1.75
+      color: $text-color
