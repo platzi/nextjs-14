@@ -1,4 +1,4 @@
-import { getProducts } from 'app/services/shopify'
+import { getProducts } from 'app/services/shopify/products'
 import Image from 'next/image'
 import styles from './MainProducts.module.sass'
 
