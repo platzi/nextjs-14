@@ -1,9 +1,9 @@
-import { getProducts } from 'app/services/shopify/products'
+import { getMainProducts } from 'app/services/shopify/products'
 import Image from 'next/image'
 import styles from './MainProducts.module.sass'
 
 export const MainProducts = async () => {
-  const products = await getProducts()
+  const products = await getMainProducts()
 
   return (
     <section className={styles.MainProducts}>
