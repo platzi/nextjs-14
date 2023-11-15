@@ -29,7 +29,7 @@ export const ProductView = ({ product }: ProductViewProps) => {
         <span className={styles.ProductView__info__price}>
           $ {product.price}
         </span>
-        <ProductViewItemsOrder maxQuantity={product.quantity} />
+        <ProductViewItemsOrder maxQuantity={product.quantity} product={product}/>
       </section>
     </main>
   )
