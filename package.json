@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ai": "^2.2.23",
     "classnames": "^2.3.2",
     "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",
     "next": "14.0.1",
+    "openai": "^4.19.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
