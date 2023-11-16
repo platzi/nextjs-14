@@ -12,6 +12,7 @@ type ProductType = {
   quantity: number;
   handle: string;
   tags: string;
+  gql_id: string;
 };
 
 type CartItem = {
@@ -20,4 +21,5 @@ type CartItem = {
   quantity: number;
   id: string;
   image: string;
+  merchandiseId: string;
 }
