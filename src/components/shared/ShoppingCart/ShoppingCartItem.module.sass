@@ -1,0 +1,35 @@
+.ShoppingCartItem
+  display: flex
+  flex-flow: row nowrap
+  column-gap: 1rem
+  align-items: center
+  &__itemInfo
+    display: grid
+    grid-template-columns: auto 1rem
+    column-gap: 1rem
+    width: 100%
+    align-items: center
+  &__title
+    font-weight: bold
+    font-size: 0.75rem
+    color: $text-color
+    text-align: left
+  &__quantity
+    width: 1rem
+    height: 1rem
+  &__removeButton
+    background: transparent
+    border: none
+    cursor: pointer
+    color: $text-color
+    font-size: 0.75rem
+    font-weight: bold
+    text-align: right
+    padding: 0
+    margin: 0
+    & > svg
+      width: 1rem
+      height: 1rem
+    &:hover
+      color: $main-contrast
+      text-decoration: underline

@@ -21,12 +21,9 @@ export const ProductViewItemsOrder = ({ maxQuantity, product }: ProductViewItems
       price: product.price,
       quantity: counter,
       id: product.id,
+      image: product.image
     });
   }
-
-  const handleSubmit = (event: SyntheticEvent) => {
-    event.preventDefault();
-  };
 
   const handleSubtract = (event: SyntheticEvent) => {
     event.preventDefault();
@@ -48,13 +45,12 @@ export const ProductViewItemsOrder = ({ maxQuantity, product }: ProductViewItems
         <button onClick={handleAdd}>+</button>
       </div>
       <form
-        onSubmit={handleSubmit}
+        onSubmit={handleAddToCart}
         className={styles.ProductViewItemsOrder__form}
       >
         <button
           className={styles.ProductViewItemsOrder__submit}
           type="submit"
-          onClick={handleAddToCart}
         >
           <FaCartShopping />
           <span>Add to cart</span>
