@@ -1,0 +1,34 @@
+.Chat
+  display: flex
+  flex-direction: column
+  margin: 6rem
+  &__button
+    border: 1px solid $main-contrast
+    background: transparent
+    padding: 0.25rem 0.5rem
+    margin-left: 1rem
+    border-radius: 0.5rem
+    color: $text-color
+    cursor: pointer
+  &__input
+    border: 1px solid $border-color
+    border-radius: 0.5rem
+    padding: 0.5rem
+    background: transparent
+    color: $text-color
+    width: 100%
+    &::placeholder
+      color: $text-color
+  &__form
+    width: 100%
+    display: flex
+    flex-flow: row nowrap
+  &__messages
+    margin-top: 2rem
+    display: flex
+    flex-direction: column
+    flex-flow: column nowrap
+    row-gap: 1rem
+  &__message
+    padding: 0.25rem
+    border: 1px solid $border-color

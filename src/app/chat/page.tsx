@@ -12,7 +12,6 @@ export default async function ChatPage() {
 
   return (
     <>
-      <h1>Chatbot</h1>
       <Chat agent={agent}/>
     </>
   )
