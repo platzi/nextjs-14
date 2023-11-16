@@ -1,14 +1,24 @@
 'use client';
- 
+
 import { useChat } from 'ai/react';
- 
-export const Chat = () => {
-  const { messages, input, handleInputChange, handleSubmit } = useChat();
- 
+
+export const Chat = (props: { agent: string }) => {
+  const { messages, input, handleInputChange, handleSubmit } = useChat({
+    initialMessages: [
+      {
+        id: '1',
+        role: 'system',
+        content: props.agent
+      }
+    ],
+  });
+
   return (
     <main className="mx-auto w-full h-screen max-w-lg p-24 flex flex-col">
       <section className="mb-auto m">
-        {messages.map(m => (
+        {messages
+        .filter(m => m.role !== 'system')
+        .map(m => (
           <div className="mb-4" key={m.id}>
             {m.role === 'user' ? 'User: ' : 'AI: '}
             {m.content}

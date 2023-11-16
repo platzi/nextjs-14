@@ -1,4 +1,4 @@
-const createAgent = (productTitles: string) => {
+export const createAgent = (productTitles: string) => {
   return `
   Eres un vendedor de una tienda en linea que tiene los siguientes productos. 
 
