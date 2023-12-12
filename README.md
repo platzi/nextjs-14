@@ -16,21 +16,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project images
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Home
 
-## Learn More
+![✨-Future-world-min (1)](https://github.com/platzi/nextjs-14/assets/39858532/da17f67a-baee-4612-bb36-3572ddd647d9)
 
-To learn more about Next.js, take a look at the following resources:
+### Store
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![image](https://github.com/platzi/nextjs-14/assets/39858532/e2b9182c-b7b7-4d71-be6c-fd1e21b9e47e)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Chatbot
 
-## Deploy on Vercel
+![image](https://github.com/platzi/nextjs-14/assets/39858532/c688a87c-dda5-457a-96b0-45fbd05a83fa)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
