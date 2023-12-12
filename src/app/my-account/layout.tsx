@@ -1,3 +1,5 @@
+import styles from './MyAccount.module.sass'
+
 interface MyAccountLayoutProps {
   children: React.ReactNode;
   ordersInfo: React.ReactNode;
@@ -6,10 +8,12 @@ interface MyAccountLayoutProps {
 
 export default async function MyAccountLayout(props: MyAccountLayoutProps) {
   return (
-    <div>
+    <div className={styles.MyAccount}>
       {props.children}
-      {props.userInfo}
-      {props.ordersInfo}
+      <main className={styles.MyAccount__panels}>
+        {props.userInfo}
+        {props.ordersInfo}
+      </main>
     </div>
   );
 }

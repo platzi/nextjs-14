@@ -8,7 +8,10 @@ export const NewAccountForm = () => {
   const [errors, setErrors] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: {
+    target: any;
+    preventDefault: () => void;
+  }) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     await handleCreateUser(formData)

@@ -11,7 +11,7 @@ export default function Error({ error, reset }: ErrorProps) {
 
   useEffect(() => {
     console.log(error)
-  }, [])
+  }, [error])
 
   return (
     <div style={{

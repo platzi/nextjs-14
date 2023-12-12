@@ -1,7 +1,6 @@
 'use client';
 import { useChat } from 'ai/react';
-import classNames from 'classnames/bind';
-import styles from './chat.module.sass';
+import styles from './Chat.module.sass';
 
 export const Chat = (props: { agent: string }) => {
   const { messages, input, handleInputChange, handleSubmit } = useChat({
@@ -16,6 +15,7 @@ export const Chat = (props: { agent: string }) => {
 
   return (
     <main className={styles.Chat} >
+      <h1 className={styles.Chat__title}>Ask anything, buy everything</h1>
       <form onSubmit={handleSubmit} className={styles.Chat__form}>
         <input
           className={styles.Chat__input}
@@ -35,8 +35,12 @@ export const Chat = (props: { agent: string }) => {
           .map(m => {
             return (
               <span key={m.id} className={styles.Chat__message}>
-                {m.role === "assistant" ? "🤖" : "👤"}
-                {m.content}
+                <div className={styles.Chat__message__icon}>
+                  {m.role === "assistant" ? "🤖" : "😊"}
+                </div>
+                <div>
+                  {m.content}
+                </div>
               </span>
             )
           }
